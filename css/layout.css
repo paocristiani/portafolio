@@ -194,7 +194,7 @@ footer {
   background-color: var(--project-bg-light);
 }
 
-/ [data-theme="dark"] .pantalla.proyecto {
+[data-theme="dark"] .pantalla.proyecto {
   background-color: var(--project-bg-dark);
 }
 
