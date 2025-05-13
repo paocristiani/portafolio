@@ -2,40 +2,63 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página no encontrada</title>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <div class="top-buttons">
-      <button id="toggleTheme">Dark</button>
-      <a href="index.html">Volver al inicio</a>
-    </div>
-
-    <section class="pantalla">
-      <h1>404</h1>
-      <p>¡Ups! La página que estás buscando no se encuentra.</p>
-      <p>Haz clic arriba para volver al inicio.</p>
-    </section>
-
-    <footer>
-      <p>© 2025 Paola Cristiani</p>
-    </footer>
-
-    <script>
-      const toggle = document.getElementById("toggleTheme");
-      const root = document.documentElement;
-
-      function updateButtonText() {
-        toggle.textContent = root.dataset.theme === "dark" ? "Light" : "Dark";
+    <title>Error 404 - Página no encontrada</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #f7dcdd;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
       }
 
-      toggle.addEventListener("click", () => {
-        root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
-        updateButtonText();
-      });
+      h1 {
+        font-size: 80px;
+        margin-bottom: 10px;
+      }
 
-      updateButtonText();
-    </script>
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: #e6815a;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      /* Estilo para la imagen */
+      .imagen-error {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .imagen-error img {
+        width: 200px; /* Ajusta el tamaño de la imagen */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Imagen centrada -->
+    <div class="imagen-error">
+      <img
+        src="https://ik.imagekit.io/elbabvgo6/undraw_taken_mshk-2.svg?updatedAt=1746016995945"
+        alt="Imagen de error"
+      />
+    </div>
+
+    <h1>404</h1>
+    <p>Oops! Esta página no existe.</p>
+    <a href="/">Volver al inicio</a>
   </body>
 </html>
